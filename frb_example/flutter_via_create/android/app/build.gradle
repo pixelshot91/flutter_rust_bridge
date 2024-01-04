@@ -58,6 +58,21 @@ android {
             signingConfig signingConfigs.debug
         }
     }
+
+    flavorDimensions "flavorDimension1"
+
+    productFlavors {
+        valueA {
+            dimension "flavorDimension1"
+            applicationIdSuffix ".dim1valueA"
+            versionNameSuffix "-dim1valueA"
+        }
+        valueB {
+            dimension "flavorDimension1"
+            applicationIdSuffix ".dim1valueB"
+            versionNameSuffix "-dim1valueB"
+        }
+    }
 }
 
 flutter {
